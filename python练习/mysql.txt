@@ -1,0 +1,5 @@
+ip地址:www
+端口号:www
+数据库名称:www
+用户名:www
+密码:www

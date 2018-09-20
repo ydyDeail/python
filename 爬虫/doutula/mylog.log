@@ -1,0 +1,921 @@
+2018-09-15 16:54:41 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: doutula)
+2018-09-15 16:54:41 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.5.0, Python 3.6.4 |Anaconda, Inc.| (default, Jan 16 2018, 10:22:32) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 17.5.0 (OpenSSL 1.0.2o  27 Mar 2018), cryptography 2.1.4, Platform Windows-7-6.1.7601-SP1
+2018-09-15 16:54:41 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'doutula', 'LOG_FILE': 'mylog.log', 'NEWSPIDER_MODULE': 'doutula.spiders', 'SPIDER_MODULES': ['doutula.spiders']}
+2018-09-15 16:54:42 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-09-15 16:54:44 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-09-15 16:54:44 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-09-15 16:54:44 [scrapy.middleware] INFO: Enabled item pipelines:
+['doutula.pipelines.DoutulaPipeline']
+2018-09-15 16:54:44 [scrapy.core.engine] INFO: Spider opened
+2018-09-15 16:54:44 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-09-15 16:54:44 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-09-15 16:54:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.doutula.com/photo/list/?page=1> (referer: None)
+2018-09-15 16:54:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.doutula.com/photo/list/?page=1> (referer: https://www.doutula.com/photo/list/?page=1)
+2018-09-15 16:54:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.doutula.com/photo/list/?page=3> (referer: https://www.doutula.com/photo/list/?page=1)
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5gy1fv1vz0ad6xj20ry0rlqf5.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.doutula.com/photo/list/?page=5> (failed 1 times): 503 Service Unavailable
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fv1vyu1ahaj2064064dft.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fv1w4hn8o9j208c08cjrb.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5gy1fv1w4j4zpcj204t04tdfn.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.doutula.com/photo/list/?page=7> (referer: https://www.doutula.com/photo/list/?page=1)
+2018-09-15 16:54:45 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.doutula.com/photo/list/?page=1859> (failed 1 times): 503 Service Unavailable
+2018-09-15 16:54:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.doutula.com/photo/list/?page=1858> (referer: https://www.doutula.com/photo/list/?page=1)
+2018-09-15 16:54:45 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.doutula.com/photo/list/?page=6> (failed 1 times): 503 Service Unavailable
+2018-09-15 16:54:45 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.doutula.com/photo/list/?page=2> (failed 1 times): 503 Service Unavailable
+2018-09-15 16:54:45 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.doutula.com/photo/list/?page=4> (failed 1 times): 503 Service Unavailable
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fv1w4g0r9fj205i05iq2s.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fv1w4d0d9pj204u05naa4.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5gy1fv1w4elvh6j206y06y0ss.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5gy1fv1w49bp0sj205505i3yz.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fv1w4bgbw8j20k00k0dhe.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fv1w464jpej204z05idfs.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fv1w47klhbj206o06owee.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.doutula.com/photo/list/?page=8> (failed 1 times): 503 Service Unavailable
+2018-09-15 16:54:45 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.doutula.com/photo/list/?page=5> (failed 2 times): 503 Service Unavailable
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fv1w438ksij204404gmxb.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5gy1fv1w44nlqmj201u01ojr5.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5gy1fv1w406vb0j204p04ct8l.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x00000000055F8E60>
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x000000000555A888>
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x000000000555A888>
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x000000000555A888>
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005821AF0>
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005821AF0>
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005821AF0>
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005821AF0>
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005821AF0>
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005821AF0>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fuyya4s3p1j202f03cmwx.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.doutula.com/photo/list/?page=4> (failed 2 times): 503 Service Unavailable
+2018-09-15 16:54:45 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.doutula.com/photo/list/?page=2> (failed 2 times): 503 Service Unavailable
+2018-09-15 16:54:45 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.doutula.com/photo/list/?page=6> (failed 2 times): 503 Service Unavailable
+2018-09-15 16:54:45 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.doutula.com/photo/list/?page=1859> (failed 2 times): 503 Service Unavailable
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x000000000555AB48>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fv1w41kbmmj205a04lglg.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fv1w3yos3fj205205igln.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/6af89bc8gw1f8njqm0ryhj20cn07j0tt.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fuw1qb4invj20el0elt92.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fuyy9zwrfxj20c80j7glp.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fuyy9y8teqj20hf0l6wfe.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fuyyb0r1x3j20mr0jiwfh.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5gy1fuyycpj97rj2077079t90.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5gy1fuyyaywetij204y04g0sn.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.doutula.com/photo/list/?page=8> (failed 2 times): 503 Service Unavailable
+2018-09-15 16:54:45 [scrapy.downloadermiddlewares.retry] DEBUG: Gave up retrying <GET https://www.doutula.com/photo/list/?page=5> (failed 3 times): 503 Service Unavailable
+2018-09-15 16:54:45 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://www.doutula.com/photo/list/?page=5> (referer: https://www.doutula.com/photo/list/?page=1)
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B23BA0>
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B23BA0>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fv1w3x4d0aj20b40b40sx.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fv1w3twp6oj205f05bt8l.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5gy1fv1w3vkyd4g208c08c74f.gif> referred in <None>
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B23BA0>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/6af89bc8gw1f8njqn0u80j203f0253yd.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/6af89bc8gw1f8njpsiuahj205405kq2x.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/6af89bc8gw1f8njqh9e2dj208s06i0su.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/6af89bc8gw1f8njqiwgrqj20no0iwabz.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/6af89bc8gw1f8njpohto5j206m05ndfy.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/6af89bc8gw1f8njpq11tmj209h06pq32.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/6af89bc8gw1f8njpk4j20j20b406jwep.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fuw1qsze8uj202802e741.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fuw1rulrggj20fa08k0tg.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5gy1fuw1rao2wrj20i60aomxh.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fuw1sf52w1j203c03edfn.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fuw1rso90lj20hs0hs3z8.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5gy1fuw1sc90tgj208207ywei.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fuw1sdq85pj209x080dfw.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fuyybzc9vhj20c80lqdg6.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fuyyef7smbj20qo0qojs1.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fuyyeh331lj20k00dbdgm.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fuyyg3syaej20b30dvwef.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5gy1fuyyfb8lhaj20e80dgaa7.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fuyygy89cfj204m04tglj.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fuyym7zyj1j20ar09zjrj.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5gy1fuyyhsibhwj202b0293y9.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B23BA0>
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B23BA0>
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B23BA0>
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x00000000055F8990>
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x00000000055F8990>
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005AEF938>
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005AEF938>
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005AEF938>
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005AEF938>
+2018-09-15 16:54:45 [scrapy.downloadermiddlewares.retry] DEBUG: Gave up retrying <GET https://www.doutula.com/photo/list/?page=4> (failed 3 times): 503 Service Unavailable
+2018-09-15 16:54:45 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://www.doutula.com/photo/list/?page=4> (referer: https://www.doutula.com/photo/list/?page=1)
+2018-09-15 16:54:45 [scrapy.downloadermiddlewares.retry] DEBUG: Gave up retrying <GET https://www.doutula.com/photo/list/?page=1859> (failed 3 times): 503 Service Unavailable
+2018-09-15 16:54:45 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://www.doutula.com/photo/list/?page=1859> (referer: https://www.doutula.com/photo/list/?page=1)
+2018-09-15 16:54:45 [scrapy.downloadermiddlewares.retry] DEBUG: Gave up retrying <GET https://www.doutula.com/photo/list/?page=6> (failed 3 times): 503 Service Unavailable
+2018-09-15 16:54:45 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://www.doutula.com/photo/list/?page=6> (referer: https://www.doutula.com/photo/list/?page=1)
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5E518>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5gy1fv1w3qprivj203n03v746.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fv1w3s7sroj204m03kglq.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fv1w3nel3rj205i04ct8o.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fv1w3p83ezj20hs0hsdgh.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/6af89bc8gw1f8njplhrqbj20ba09vjro.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/6af89bc8gw1f8njpmsud1j205404m744.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/6af89bc8gw1f8njph6wrhj205a04ujrh.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/6af89bc8gw1f8njpirpxyj20bt0go3zc.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/6af89bc8gw1f8njoroaw8j20e80izwgv.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fuw1te1y6rj209q09ljrj.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5gy1fuw1ty0pnhj208s056aa2.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fuw1tzdxgxj201n01c3y9.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fuw1uh1a2vj203c02ya9v.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5gy1fuw1uihqjyj201v01zwe9.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fuw1v0y3ccj2070077771.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fuw1viq7cwj208w08w74f.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5gy1fuyym6fhwwj20ew0ddgmr.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fuyym4fpknj20fr0fudgi.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5gy1fuyym12yebj20j30hs0tq.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fuyym2lj3yj204y05iwel.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fuyylz5c1pj205h05gt97.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5gy1fuyylvx06kj203c03c3yb.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.doutula.com/photo/list/?page=2> (referer: https://www.doutula.com/photo/list/?page=1)
+2018-09-15 16:54:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.doutula.com/photo/list/?page=8> (referer: https://www.doutula.com/photo/list/?page=1)
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5E518>
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5E518>
+2018-09-15 16:54:45 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://www.doutula.com/photo/list/?page=5>: HTTP status code is not handled or not allowed
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5gy1fv1w3lx1rkj204z04o746.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fv1w3ixvhaj20k00k0jss.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fv1w3kg31xj206o06o74b.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fv1w3f7xc5j20b40b4750.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5gy1fv1w3gv2vcj20dc0dg0t2.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fv1w3deqc7j20bm0bm3yq.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005821AF0>
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005AEF048>
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005AEF048>
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005AEF048>
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005AEF048>
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005AEF048>
+2018-09-15 16:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005AEF048>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/6af89bc8gw1f8njpfrb1tj20k00k0wh4.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/6af89bc8gw1f8njoqhmp9j205i044mwz.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/6af89bc8gw1f8njon9f71j206w065gmp.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/6af89bc8gw1f8njoohrnhj205a06oglr.jpg> referred in <None>
+2018-09-15 16:54:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/6af89bc8gw1f8njoh86l9j203n05adfr.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/6af89bc8gw1f8njoizyvlj2041052t8q.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B23EB8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B23EB8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B23EB8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B27570>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B276D0>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005821AF0>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005821AF0>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5gy1fuw1w0cc6rj206206oaa5.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fuw1w1x5d1j20k00isjri.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5gy1fuw1x2c6csj20c306xgm2.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fuw1x0nc3vj20c806wq31.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fuw205u59aj208c08c0sq.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fuw1yvzx7vj20c80bkt8s.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005821AF0>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005821AF0>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005821AF0>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005821AF0>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005821AF0>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005821AF0>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005821AF0>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005821AF0>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fuyylxdyojj205i05iq2v.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fuyyoaj6ocj201o01odfl.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5gy1fuyyo7njnyj20go0cg3z0.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fuyyo95ecaj206204ldfu.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fuyyo5wifdj208c08cgll.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005821AF0>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5gy1fv1w3btrayg204s03qwej.gif> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fv1w3a9cufj209q09q74e.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fv1w38ogxtj20sg0sg75p.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fv1w351rerj205g05i3ye.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5gy1fv1w36mswxj205d03waa2.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fv1w33mgjdj20800803yh.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://www.doutula.com/photo/list/?page=6>: HTTP status code is not handled or not allowed
+2018-09-15 16:54:46 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://www.doutula.com/photo/list/?page=1859>: HTTP status code is not handled or not allowed
+2018-09-15 16:54:46 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://www.doutula.com/photo/list/?page=4>: HTTP status code is not handled or not allowed
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B23F10>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B23F10>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B23F10>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/6af89bc8gw1f8njokkm2ug203v04cdgu.gif> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/6af89bc8gw1f8njolmr32j205i05i0so.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/6af89bc8gw1f8njnpf8tpj203p03oa9y.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B23F10>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5E8E0>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5E8E0>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5E8E0>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5E8E0>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5gy1fuw204apmpj20b408caad.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fuw2019lblj205i05i766.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fuw202oib1j204q04gt8j.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5gy1fuw1zz0g30j20a006kwei.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fuw1zxg3wfj205l04pwee.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fuw1zvy2z8j205f050glx.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5E8E0>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5EBA0>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005821888>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005821888>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005821888>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005821888>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005821888>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5gy1fuyyo31pekj201f01igld.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fuyyo4en21j201o01oq2p.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fuyynyzrhtj20f008a0sy.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fuyyo12ui5j206o06o3yt.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5gy1fuyynxg0vnj205c05i746.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005821888>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005821888>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005821888>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005821888>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005821888>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005821888>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fv1w30oxmbj2064064gln.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5gy1fv1w326lutj202c028a9u.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5gy1fv1w2xm0qjj207607cdfv.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fv1w2z6tilj207i07iwep.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fv1w2w1vbdj205i05iglu.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5gy1fv1w2t360qj205i048glf.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7BA40>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/6af89bc8gw1f8njoeg95yj20bh07nt92.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/6af89bc8gw1f8njofr3sbj20bh095t9c.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7B150>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7B150>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7B150>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7B150>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7B150>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5gy1fuw1zuak0pj206o05v3yp.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fuw1zsot4rj208c06jt8u.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fuw21smqfaj206p06udft.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fuw21ooa7wj203402xgle.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5gy1fuw21r5t3wj20tj0tz0uv.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fuw21n43tmj2074073jrr.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7B150>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7B150>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7B150>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7B150>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7B150>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7B150>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fuyynukkfqj20k00k03zl.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fuyynvzpikj202f029a9u.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fuyyn27oy8j208m09cmx7.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5gy1fuyynsld48j206o06oq3d.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fuyyn0oh1rj20c80960sx.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7B150>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7B150>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B27570>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B27570>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B27570>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B27570>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fv1w2ug2saj202p02ngle.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fv1w2q5uwij206103rt8l.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fv1w2rmgu5j202v01ymwy.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5gy1fv1w2or31nj20hs0hsjse.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fv1w2ki0xcj203a01s741.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fv0o5ylfn4g206o06ngm6.gif> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B27570>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B27570>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B27570>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7B7D8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7B7D8>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/6af89bc8gw1f8njnk408sj20c804qwew.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7B7D8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5E830>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5E830>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5E518>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7B7D8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7B7D8>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fuw21jpoytg206o06oag8.gif> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5gy1fuw21liwzvg208c08c3z0.gif> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fuw21focigj206u07dq3p.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5gy1fuw21dwa7dj208s07u0sq.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fuw219zf0uj204z06ngn9.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fuw21bp1iaj206o06o3z2.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7B7D8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7B7D8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7B7D8>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5gy1fuyymz4qloj207s08u3yl.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fuyymvqnwcj202e01ta9u.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fuyymxkejzj20hs0hsq3m.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fuyymrdlxqj20j60ixq3u.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5gy1fuyymubhf4j206o05kwek.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fuyymp9xd0j201o01ojr7.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fuyymmcre8j205i049mwy.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7B7D8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7B7D8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7BE60>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7BE60>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7BE60>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x00000000055F8990>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fv1w2mttlvj20hs0ohmye.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fv1w2hhzi7j203c01y3y9.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5gy1fv1w2j5csgj20c80c8t90.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fv1w2g2we9j207g0aedft.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x00000000055F8990>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x00000000055F8990>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x00000000055F8990>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x00000000055F8990>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x00000000055F8990>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x00000000055F8990>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x00000000055F8990>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x00000000055F8990>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x00000000055F8990>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x00000000055F8990>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x00000000055F8990>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x00000000055F8990>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B79150>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5gy1fv0o5vdictj20u00lh75k.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fv0o5wu8daj205k05hq2u.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fv0o5ro060g207i07i74o.gif> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fv0o5tc665j206o06oglw.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fv0o5oicktj20660720su.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B79150>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B79150>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B79150>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B79150>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B79150>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B79150>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/6af89bc8gw1f8njnlkssig205g06s0t9.gif> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/6af89bc8gw1f8njnmyyjxj205e04xglk.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/6af89bc8gw1f8njnoftrpj205w06p74e.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/6af89bc8gw1f8njnfrtwrj206b051t8t.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/6af89bc8gw1f8njnisratj20hs0hsdha.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/6af89bc8gw1f8njncr0sej204v05iwef.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B79150>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B79150>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B79150>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B79150>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B79150>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B79150>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fuw21683zpj207a06x0sw.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5gy1fuw217w8jrj203u04w0sy.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5gy1fuw212xowoj202q02c742.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fuw214l55bj205k05k3yx.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fuw211ir5rj208c08cglr.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5gy1fuw20yluzuj208b090mx5.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B79150>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B79150>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B79150>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B79150>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5gy1fuyymnvjmgj205k05kjrd.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5gy1fuyymjdsoqj205c05c0sn.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fuyymkxxcdj205i05i0sy.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fuyymhwicqj209q078jrq.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fuyymg91vnj2073073gn0.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fuyymcm1w8j20f00a00td.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5gy1fuyyme56x2j208c08cq2v.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7BA40>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fv1w2bdosxj20c80anaaj.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fv1w2cs1qsj203c038t8i.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=2>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7BA40>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5gy1fv0o5q2ld0j205h05i3ye.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fv0o5mz8vbj20jp0ry0tr.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fv0o5jgmtyj204z02wglg.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5gy1fv0o5l3eupj204e04f3yn.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fv0o5hs7jrj205i04zglq.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5gy1fv0o5g81ybj209q09rmxm.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fv0o5d326uj206606oa9y.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7BA40>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7BA40>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7BA40>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B79938>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B79938>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B79AF0>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/6af89bc8gw1f8njnefoy4j204904r3yc.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/6af89bc8gw1f8njmolwdyj204803jjrf.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/6af89bc8gw1f8njmq4jcoj205805d3yn.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/6af89bc8gw1f8njmrk60lj203r03udft.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/6af89bc8gw1f8njmih8x5j205a05imx8.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/6af89bc8gw1f8njmk3xx8j209u04idg4.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7BA40>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7BA40>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7BA40>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7BA40>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7BA40>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7BA40>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7BA40>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fuw20zywb2j202c01rt8h.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fuw20x0njnj205k05kt98.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5gy1fuw20twp1hj208208274b.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fuw20vcal8j205i024jr9.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fuw20s9rl5j204t054dg2.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5gy1fuwnvdzrmvj20c80b6mxv.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7BA40>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7BA40>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7BA40>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B7BA40>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5E518>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5gy1fuyypz5k1gj2044042web.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fuyypvwxg4j206t06bq2v.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fuyypxn6vlj20cj0a2aam.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5gy1fuyypskb3rj20f00f0js5.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fuyypqovfwj205k05kdfs.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fuyypp796aj205305iwef.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=2>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5E518>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=2>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CB2308>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=2>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CB2308>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=2>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CB2308>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CB2308>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CB2308>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CB2308>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CB2308>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CB2308>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=2>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CB24C0>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5E518>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5E518>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5E518>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5E518>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5E518>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5E518>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fv0o5ehi0qj204q04ga9v.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fv0o59kjgbj205405k0tg.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5gy1fv0o5bl94fj20k00n3dgv.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5gy1fv0o55z5lmj205i0570sm.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fv0o57pex1j20hs0i3js0.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5E518>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5E518>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5E518>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5E518>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5E518>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5E518>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5E518>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/6af89bc8gw1f8njmluo11j20hs0qojti.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/6af89bc8gw1f8njmn3l0aj208w08xjrm.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/6af89bc8gw1f8njmge9kej206404qwee.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/6af89bc8gw1f8njmbw3y1j205y05kdfw.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/6af89bc8gw1f8njljdnoij20go0cntat.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/6af89bc8gw1f8njll5s6gj205405k74a.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5E518>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5E518>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005B5E518>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fux76btfrmj204q03i3yc.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5gy1fux77l081cj20fk0fk74v.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fux76yhmlkj20g40g4751.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET http://img.doutula.com/production/uploads/image//2018/09/04/20180904067110_wuXcBb.jpg!dta> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fux77j3quqg203k03v0ss.gif> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fuyypmbjqnj20c80c1weq.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=2>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CF20A0>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=2>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CBC1A8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=2>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CBC0F8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=2>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CBC0F8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=2>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CBC0F8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=2>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CBC0F8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CBC0F8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CBC0F8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=2>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CBC0F8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CBC0F8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CBC0F8>
+2018-09-15 16:54:46 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CBC0F8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CBC0F8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CBC0F8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CBC0F8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CBC0F8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CBC0F8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CBC0F8>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fv0o54h579j205y06n0sz.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fv0o52we4pj205i045dfn.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5gy1fv0o51i6pwj206z06ajrg.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CBC0F8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CBC0F8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CBC0F8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CBC0F8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CBC0F8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CBC0F8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CBC518>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fux7b0fq41j201x0220op.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fuyypkb54tj205k07fwfb.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fuyypgab68j20e90e7wez.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.doutula.com/production/uploads/image//2018/09/04/20180904067101_ZHNazf.jpg!dta> (referer: None)
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.doutula.com/production/uploads/image//2018/09/04/20180904067101_ZHNazf.jpg!dta> referred in <None>
+2018-09-15 16:54:46 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=2>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CF27D8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=2>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CF27D8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=2>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CF27D8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=2>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CF27D8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CF27D8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CF27D8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=2>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CF27D8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CF27D8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CF27D8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CF27D8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1858>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CF27D8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CF27D8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CF27D8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CF27D8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CF27D8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CF27D8>
+2018-09-15 16:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CF27D8>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fv0o4ydfk4j20hs0hsgm9.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fv0o4zw21wj206y03gglk.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fv0oiyefg9j20fj09874m.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5gy1fv0oj01wi0j206o06ot8z.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fv0oiwq20rj205i04swem.jpg> referred in <None>
+2018-09-15 16:54:46 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
+2018-09-15 16:54:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=2>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CF27D8>
+2018-09-15 16:54:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=2>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CF27D8>
+2018-09-15 16:54:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=2>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CF27D8>
+2018-09-15 16:54:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005DB04C0>
+2018-09-15 16:54:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x0000000005DB04C0>
+2018-09-15 16:54:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=3>
+<generator object DoutulaPipeline.item_completed at 0x0000000005DB04C0>
+2018-09-15 16:54:47 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fv0oitos0tj205i045dfn.jpg> referred in <None>
+2018-09-15 16:54:47 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5gy1fv0oiv7wsnj202x02u749.jpg> referred in <None>
+2018-09-15 16:54:47 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fv0ois6m64j206o06oaac.jpg> referred in <None>
+2018-09-15 16:54:47 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5gy1fv0oiqjscwj2073073dfv.jpg> referred in <None>
+2018-09-15 16:54:47 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fv0oiozdirj20k00jumy1.jpg> referred in <None>
+2018-09-15 16:54:47 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fv0oin58enj20b40b40t4.jpg> referred in <None>
+2018-09-15 16:54:47 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fv0oj714b8j205k04mq2v.jpg> referred in <None>
+2018-09-15 16:54:47 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/6af89bc8gw1f8njla528ij206y050q2z.jpg> referred in <None>
+2018-09-15 16:54:47 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws3.sinaimg.cn/bmiddle/6af89bc8gw1f8njlf62quj205j07fmxj.jpg> referred in <None>
+2018-09-15 16:54:47 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://ws2.sinaimg.cn/bmiddle/6af89bc8gw1f8njkkfg7ej205u03m74a.jpg> referred in <None>
+2018-09-15 16:54:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=8>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CF2150>
+2018-09-15 16:54:47 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET http://img.doutula.com/production/uploads/image//2018/09/05/20180905153509_fAFUmS.jpg!dta> referred in <None>
+2018-09-15 16:54:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=2>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CF2150>
+2018-09-15 16:54:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=2>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CF2150>
+2018-09-15 16:54:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=2>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CF2150>
+2018-09-15 16:54:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=2>
+<generator object DoutulaPipeline.item_completed at 0x0000000005CF2150>
+2018-09-15 16:54:47 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fux7fk3z8pj20u011sabi.jpg> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+2018-09-15 16:54:47 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fux7ae8eazj205i05i746.jpg> (failed 1 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', 'ssl23_read', 'ssl handshake failure')]>]
+2018-09-15 16:54:47 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5gy1fuyypnrc7uj205i04mglf.jpg> (failed 1 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', 'ssl23_read', 'ssl handshake failure')]>]
+2018-09-15 16:54:47 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fv1w287m6uj204w03l3yf.jpg> (failed 1 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', 'ssl23_read', 'ssl handshake failure')]>]
+2018-09-15 16:54:47 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5gy1fv1w29mverj203103c0si.jpg> (failed 1 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', 'ssl23_read', 'ssl handshake failure')]>]
+2018-09-15 16:54:47 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fux7fbxi89j205i050jra.jpg> (failed 1 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', 'ssl23_read', 'ssl handshake failure')]>]
+2018-09-15 16:54:47 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5gy1fv1w2ektutj20e60e6t99.jpg> (failed 1 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', 'ssl3_read_bytes', 'ssl handshake failure')]>]
+2018-09-15 16:54:47 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fux7ff3iz8j205g05gq2y.jpg> (failed 1 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', 'ssl23_read', 'ssl handshake failure')]>]
+2018-09-15 16:54:47 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5gy1fux7fi3akjj205z06tq31.jpg> (failed 1 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', 'ssl3_read_bytes', 'ssl handshake failure')]>]
+2018-09-15 16:54:47 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fv1w26oz8kj208c081t8u.jpg> (failed 1 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', 'ssl23_read', 'ssl handshake failure')]>]
+2018-09-15 16:54:47 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws1.sinaimg.cn/bmiddle/6af89bc8gw1f8njlmjzohj205k0463yd.jpg> (failed 1 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', 'ssl23_read', 'ssl handshake failure')]>]
+2018-09-15 16:55:24 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: doutula)
+2018-09-15 16:55:24 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.5.0, Python 3.6.4 |Anaconda, Inc.| (default, Jan 16 2018, 10:22:32) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 17.5.0 (OpenSSL 1.0.2o  27 Mar 2018), cryptography 2.1.4, Platform Windows-7-6.1.7601-SP1
+2018-09-15 16:55:24 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'doutula', 'LOG_FILE': 'mylog.log', 'NEWSPIDER_MODULE': 'doutula.spiders', 'SPIDER_MODULES': ['doutula.spiders']}
+2018-09-15 16:55:24 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-09-15 16:55:27 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-09-15 16:55:27 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-09-15 16:55:27 [scrapy.middleware] INFO: Enabled item pipelines:
+['doutula.pipelines.DoutulaPipeline']
+2018-09-15 16:55:27 [scrapy.core.engine] INFO: Spider opened
+2018-09-15 16:55:27 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-09-15 16:55:27 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-09-15 16:55:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.doutula.com/photo/list/?page=1> (referer: None)
+2018-09-15 16:55:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.doutula.com/photo/list/?page=1> (referer: https://www.doutula.com/photo/list/?page=1)
+2018-09-15 16:55:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.doutula.com/photo/list/?page=1859> (referer: https://www.doutula.com/photo/list/?page=1)
+2018-09-15 16:55:28 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.doutula.com/photo/list/?page=6> (failed 1 times): 503 Service Unavailable
+2018-09-15 16:55:28 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.doutula.com/photo/list/?page=3> (failed 1 times): 503 Service Unavailable
+2018-09-15 16:55:28 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.doutula.com/photo/list/?page=4> (failed 1 times): 503 Service Unavailable
+2018-09-15 16:55:28 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.doutula.com/photo/list/?page=5> (failed 1 times): 503 Service Unavailable
+2018-09-15 16:55:28 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.doutula.com/photo/list/?page=7> (failed 1 times): 503 Service Unavailable
+2018-09-15 16:55:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.doutula.com/photo/list/?page=8> (referer: https://www.doutula.com/photo/list/?page=1)
+2018-09-15 16:55:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.doutula.com/photo/list/?page=2> (referer: https://www.doutula.com/photo/list/?page=1)
+2018-09-15 16:55:28 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.doutula.com/photo/list/?page=1858> (failed 1 times): 503 Service Unavailable
+2018-09-15 16:55:28 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.doutula.com/photo/list/?page=7> (failed 2 times): 503 Service Unavailable
+2018-09-15 16:55:28 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.doutula.com/photo/list/?page=4> (failed 2 times): 503 Service Unavailable
+2018-09-15 16:55:28 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.doutula.com/photo/list/?page=3> (failed 2 times): 503 Service Unavailable
+2018-09-15 16:55:28 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.doutula.com/photo/list/?page=6> (failed 2 times): 503 Service Unavailable
+2018-09-15 16:55:28 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.doutula.com/photo/list/?page=5> (failed 2 times): 503 Service Unavailable
+2018-09-15 16:55:28 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.doutula.com/photo/list/?page=1858> (failed 2 times): 503 Service Unavailable
+2018-09-15 16:55:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.doutula.com/photo/list/?page=4> (referer: https://www.doutula.com/photo/list/?page=1)
+2018-09-15 16:55:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.doutula.com/photo/list/?page=7> (referer: https://www.doutula.com/photo/list/?page=1)
+2018-09-15 16:55:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.doutula.com/photo/list/?page=3> (referer: https://www.doutula.com/photo/list/?page=1)
+2018-09-15 16:55:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.doutula.com/photo/list/?page=6> (referer: https://www.doutula.com/photo/list/?page=1)
+2018-09-15 16:55:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.doutula.com/photo/list/?page=1858> (referer: https://www.doutula.com/photo/list/?page=1)
+2018-09-15 16:55:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5gy1fv1vz0ad6xj20ry0rlqf5.jpg> (referer: None)
+2018-09-15 16:55:29 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5gy1fv1vz0ad6xj20ry0rlqf5.jpg> referred in <None>
+2018-09-15 16:55:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.doutula.com/production/uploads/image//2018/09/04/20180904067101_ZHNazf.jpg!dta> (referer: None)
+2018-09-15 16:55:29 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.doutula.com/production/uploads/image//2018/09/04/20180904067101_ZHNazf.jpg!dta> referred in <None>
+2018-09-15 16:55:30 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.doutula.com/photo/list/?page=1859> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2018-09-15 16:55:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fv1vyu1ahaj2064064dft.jpg> (referer: None)
+2018-09-15 16:55:30 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fv1vyu1ahaj2064064dft.jpg> referred in <None>
+2018-09-15 16:55:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x000000000603F888>
+2018-09-15 16:55:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=8>
+<generator object DoutulaPipeline.item_completed at 0x0000000005702258>
+2018-09-15 16:55:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fv1w4hn8o9j208c08cjrb.jpg> (referer: None)
+2018-09-15 16:55:30 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fv1w4hn8o9j208c08cjrb.jpg> referred in <None>
+2018-09-15 16:55:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5gy1fuw1rao2wrj20i60aomxh.jpg> (referer: None)
+2018-09-15 16:55:30 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5gy1fuw1rao2wrj20i60aomxh.jpg> referred in <None>
+2018-09-15 16:55:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5gy1fv1w4j4zpcj204t04tdfn.jpg> (referer: None)
+2018-09-15 16:55:30 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5gy1fv1w4j4zpcj204t04tdfn.jpg> referred in <None>
+2018-09-15 16:55:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ws2.sinaimg.cn/bmiddle/6af89bc8gw1f8njj7ikulj20a202zt8y.jpg> (referer: None)
+2018-09-15 16:55:30 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://ws2.sinaimg.cn/bmiddle/6af89bc8gw1f8njj7ikulj20a202zt8y.jpg> referred in <None>
+2018-09-15 16:55:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fux7fk3z8pj20u011sabi.jpg> (referer: None)
+2018-09-15 16:55:30 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fux7fk3z8pj20u011sabi.jpg> referred in <None>
+2018-09-15 16:55:30 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2018-09-15 16:55:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x00000000057023B8>
+2018-09-15 16:55:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x00000000057023B8>
+2018-09-15 16:55:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=7>
+<generator object DoutulaPipeline.item_completed at 0x00000000057023B8>
+2018-09-15 16:55:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x00000000057023B8>
+2018-09-15 16:55:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.doutula.com/production/uploads/image//2018/09/04/20180904067088_ENhaCK.jpg!dta> (referer: None)
+2018-09-15 16:55:30 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.doutula.com/production/uploads/image//2018/09/04/20180904067088_ENhaCK.jpg!dta> referred in <None>
+2018-09-15 16:55:30 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
+2018-09-15 16:55:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fv1w4g0r9fj205i05iq2s.jpg> (referer: None)
+2018-09-15 16:55:30 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fv1w4g0r9fj205i05iq2s.jpg> referred in <None>
+2018-09-15 16:55:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fv0o5ylfn4g206o06ngm6.gif> (referer: None)
+2018-09-15 16:55:30 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fv0o5ylfn4g206o06ngm6.gif> referred in <None>
+2018-09-15 16:55:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ws2.sinaimg.cn/bmiddle/6af89bc8gw1f8nhotrjorj202r02c743.jpg> (referer: None)
+2018-09-15 16:55:30 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://ws2.sinaimg.cn/bmiddle/6af89bc8gw1f8nhotrjorj202r02c743.jpg> referred in <None>
+2018-09-15 16:55:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fuw1qsze8uj202802e741.jpg> (referer: None)
+2018-09-15 16:55:30 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fuw1qsze8uj202802e741.jpg> referred in <None>
+2018-09-15 16:55:30 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-09-15 16:55:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1859>
+<generator object DoutulaPipeline.item_completed at 0x0000000005D98150>
+2018-09-15 16:55:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=8>
+<generator object DoutulaPipeline.item_completed at 0x0000000005D98150>
+2018-09-15 16:55:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=8>
+<generator object DoutulaPipeline.item_completed at 0x0000000005D98150>
+2018-09-15 16:55:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.doutula.com/photo/list/?page=1>
+<generator object DoutulaPipeline.item_completed at 0x0000000005D98150>
+2018-09-15 16:55:31 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fv0o5wu8daj205k05hq2u.jpg> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+2018-09-15 16:55:31 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws2.sinaimg.cn/bmiddle/6af89bc8gw1f8nhhnwixhj204n050jrf.jpg> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+2018-09-15 16:55:31 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5gy1fv1w4elvh6j206y06y0ss.jpg> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+2018-09-15 16:55:31 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5gy1fv0o5vdictj20u00lh75k.jpg> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+2018-09-15 16:55:31 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fv1w4d0d9pj204u05naa4.jpg> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+2018-09-15 16:55:31 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fux7fbxi89j205i050jra.jpg> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+2018-09-15 16:55:31 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws3.sinaimg.cn/bmiddle/6af89bc8gw1f8ng80uke1j20jg0lsgmh.jpg> (failed 1 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', 'ssl3_read_bytes', 'ssl handshake failure')]>]
+2018-09-15 16:55:31 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fuyya4s3p1j202f03cmwx.jpg> (failed 1 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', 'ssl3_read_bytes', 'ssl handshake failure')]>]
+2018-09-15 16:55:31 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fuyy9zwrfxj20c80j7glp.jpg> (failed 1 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', 'ssl3_read_bytes', 'ssl handshake failure')]>]
+2018-09-15 16:55:31 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fuw1rso90lj20hs0hs3z8.jpg> (failed 1 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', 'ssl3_read_bytes', 'ssl handshake failure')]>]
+2018-09-15 16:55:31 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5ly1fv0o5ro060g207i07i74o.gif> (failed 1 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', 'ssl3_read_bytes', 'ssl handshake failure')]>]
+2018-09-15 16:55:31 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fv0o5tc665j206o06oglw.jpg> (failed 1 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', 'ssl3_read_bytes', 'ssl handshake failure')]>]
+2018-09-15 16:55:31 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws4.sinaimg.cn/bmiddle/9150e4e5gy1fv1w49bp0sj205505i3yz.jpg> (failed 1 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', 'ssl3_read_bytes', 'ssl handshake failure')]>]
+2018-09-15 16:55:31 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws3.sinaimg.cn/bmiddle/6af89bc8gw1f8njqm0ryhj20cn07j0tt.jpg> (failed 1 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', 'ssl3_read_bytes', 'ssl handshake failure')]>]
+2018-09-15 16:55:31 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws1.sinaimg.cn/bmiddle/6af89bc8gw1f8ngj5fmm4j20fj09st99.jpg> (failed 1 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', 'ssl3_read_bytes', 'ssl handshake failure')]>]
+2018-09-15 16:55:31 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5gy1fuxuq7y8wzj20hq0hq3z8.jpg> (failed 1 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', 'ssl3_read_bytes', 'ssl handshake failure')]>]
+2018-09-15 16:55:31 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fuyyp02dnfj206c05qglj.jpg> (failed 1 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', 'ssl3_read_bytes', 'ssl handshake failure')]>]
+2018-09-15 16:55:31 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5gy1fux7fi3akjj205z06tq31.jpg> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+2018-09-15 16:55:31 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws2.sinaimg.cn/bmiddle/9150e4e5gy1fuyyp1l2kqj205i04oa9z.jpg> (failed 1 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', 'ssl3_read_bytes', 'ssl handshake failure')]>]
+2018-09-15 16:55:31 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws4.sinaimg.cn/bmiddle/6af89bc8gw1f8ngjceomnj203x05i0so.jpg> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+2018-09-15 16:55:31 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fux7ff3iz8j205g05gq2y.jpg> (failed 1 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', 'ssl3_read_bytes', 'ssl handshake failure')]>]
+2018-09-15 16:55:31 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws1.sinaimg.cn/bmiddle/9150e4e5ly1fuw1qb4invj20el0elt92.jpg> (failed 1 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', 'ssl3_read_bytes', 'ssl handshake failure')]>]
+2018-09-15 16:55:31 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fv1w4bgbw8j20k00k0dhe.jpg> (failed 1 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', 'ssl3_read_bytes', 'ssl handshake failure')]>]
